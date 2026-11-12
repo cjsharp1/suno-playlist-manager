@@ -57,6 +57,15 @@ Click **Focus** in the header to open a dark, full-screen view of the current so
 - When you reopen the manager, it picks up changes you made in Suno: playlists, songs added or removed, new songs, and recently deleted songs. Older changes, such as an old song deleted in Suno, need **Refresh**.
 - Folders and Unsorted exist only in this script. Suno has no equivalent.
 
+## Development
+
+The script runs as-is; there's no build step. Tests run it in [jsdom](https://github.com/jsdom/jsdom) against a fake Suno (Node 20+):
+
+```sh
+npm install
+npm test
+```
+
 ## Releasing a new version
 
 Bump `@version` in the script header, add a changelog line, and push to `main`. Userscript managers only update when the version number goes up.

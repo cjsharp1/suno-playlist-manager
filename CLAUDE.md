@@ -21,4 +21,8 @@ Suno has no public API. The script calls the same endpoints suno.com does (`stud
 
 ## Verifying changes
 
-There's no test suite. Exercise changes in jsdom with a mocked `fetch` and a fake Suno DOM, then have the owner test on suno.com in Firefox. When reporting, name what was assumed about Suno's real page, so a mismatch is quick to diagnose.
+Run `npm test` (after `npm install`). It runs the script in jsdom against a fake Suno defined in `test/harness.js`: the API, the song and playlist pages, and the player bar. Every change gets a test in the matching `test/*.test.js` file, and the suite stays green before pushing.
+
+The fake is our model of the real suno.com, so it can be wrong. When the script relies on something new about Suno's page, add it to the harness and name it as an assumption in your report. When the owner finds that real Suno behaves differently, fix the harness to match first, then fix the script. Final confirmation is the owner testing on suno.com in Firefox.
+
+Open questions and planned features are tracked as GitHub issues.

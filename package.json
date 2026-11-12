@@ -1,0 +1,15 @@
+{
+  "name": "suno-playlist-manager",
+  "private": true,
+  "description": "Tests for the Suno Playlist Manager userscript",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test --test-concurrency=1"
+  },
+  "devDependencies": {
+    "jsdom": "^24.1.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
