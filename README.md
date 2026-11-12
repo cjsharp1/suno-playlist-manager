@@ -7,10 +7,10 @@ A userscript that adds a playlist manager on top of [suno.com](https://suno.com)
 ## Install
 
 1. Install a userscript manager: [Violentmonkey](https://violentmonkey.github.io/) or [Tampermonkey](https://www.tampermonkey.net/). Both work in Firefox and Chrome.
-2. Create a new script, paste in the contents of `suno-playlist-manager.user.js`, and save it.
+2. Open **[suno-playlist-manager.user.js](https://raw.githubusercontent.com/cjsharp1/suno-playlist-manager/main/suno-playlist-manager.user.js)**. Your userscript manager recognizes the file and offers to install it.
 3. Reload suno.com and sign in. A **♫ Playlists** button appears in the bottom-right corner.
 
-To update, replace the script's contents with the newest version from this repo. The version number and changelog are at the top of the script.
+Installed this way, your userscript manager checks this repo for new versions and updates the script automatically. The version number and changelog are at the top of the script.
 
 ## Using it
 
@@ -59,7 +59,7 @@ Click **Focus** in the header to open a dark, full-screen view of the current so
 
 ## Releasing a new version
 
-Bump `@version` in the script header, add a changelog line, and push to `main`.
+Bump `@version` in the script header, add a changelog line, and push to `main`. Userscript managers only update when the version number goes up.
 
 ## Troubleshooting
 

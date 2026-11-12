@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Suno Playlist Manager
 // @namespace    cjsharp.com
-// @version      0.14.3
+// @version      0.14.4
 // @description  Two-panel drag-and-drop playlist manager for your Suno library
 // @match        https://suno.com/*
 // @grant        none
@@ -9,9 +9,12 @@
 // @license      MIT
 // @homepageURL  https://github.com/cjsharp1/suno-playlist-manager
 // @supportURL   https://github.com/cjsharp1/suno-playlist-manager/issues
+// @updateURL    https://raw.githubusercontent.com/cjsharp1/suno-playlist-manager/main/suno-playlist-manager.user.js
+// @downloadURL  https://raw.githubusercontent.com/cjsharp1/suno-playlist-manager/main/suno-playlist-manager.user.js
 // ==/UserScript==
 
 // Changelog
+// 0.14.4 Automatic updates from the GitHub repo.
 // 0.14.3 Packaged for GitHub (MIT license).
 // 0.14.2 Focus Mode eases the volume down over 3 s on entry, and back up on exit.
 // 0.14.1 Removed the "Player bar" toggle; the overlay always leaves room for it.
